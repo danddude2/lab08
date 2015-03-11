@@ -8,7 +8,7 @@ class TennisGame:
         None
 
     def score(self):
-        return ""
+        return "love - love"
 
     def playerOneScored(self):
         None

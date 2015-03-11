@@ -5,16 +5,19 @@ class TennisGame:
         You may need to write code here such as declaring some fields 
         to help with making your tests pass.
         """
-        None
+        self.p1_score = 0
+	self.p2_score = 0
 
     def score(self):
-        return "love - love"
+	if (self.p1_score == 0 & self.p2_score == 0):
+		return "love - love"
+	return ""
 
     def playerOneScored(self):
-        None
+	self.p1_score += 1
 
     def playerTwoScored(self):
-        None
+	self.p2_score += 1
 
     """
     It should not be necessary to create any other methods to complete the assignment.

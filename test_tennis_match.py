@@ -7,6 +7,8 @@ class TestTennisGame(unittest.TestCase):
         '''simple example to start you off'''
         match = TennisGame()
         self.assertEqual("love - love", match.score())
+	match.playerOneScored()
+        self.assertEqual("15 - love", match.score())
 
 
 if __name__ == '__main__':
